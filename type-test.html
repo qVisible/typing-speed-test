@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <script>
+        function processInput() {
+            document.getElementById('speed').innerHTML = document.getElementById('test-area').value.length/4.5;
+        }
+
+    </script>
+</head>
+
+<body>
+   <div style="width:450px;"><p>Type:</p> <p><strong>The quick brown fox jumps over the lazy dog.</strong></p><p> as many times as you can in 60 seconds!</p></div>
+
+    <textarea id="test-area" rows="15" cols="60" oninput="processInput()">
+    </textarea>
+    <div id="speed"></div>
+
+
+</body>
+
+</html>
